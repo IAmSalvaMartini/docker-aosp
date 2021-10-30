@@ -1,5 +1,5 @@
 DOCKER = docker
-IMAGE = kylemanna/aosp
+IMAGE = iamsalvamartini/aosp
 
 aosp: Dockerfile
 	$(DOCKER) build -t $(IMAGE) .

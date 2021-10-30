@@ -2,14 +2,14 @@
 #
 # Simple AOSP wrapper to run commands in an AOSP docker container
 #
-# Author: Kyle Manna <kyle@kylemanna.com>
+# Author: IAmSalvaMartini <starraos@gmail.com>
 #
 
 set -e
 
 # Override from environment
 
-AOSP_IMAGE=${AOSP_IMAGE:-kylemanna/aosp}
+AOSP_IMAGE=${AOSP_IMAGE:-iamsalvamartini/aosp}
 AOSP_ARGS=${AOSP_ARGS:---rm -it}
 
 AOSP_VOL=${AOSP_VOL:-~/aosp-root}

@@ -1,9 +1,9 @@
 Android Open Source Project Docker Build Environment
 ====================================================
 
-[![Docker Stars](https://img.shields.io/docker/stars/kylemanna/aosp.svg)](https://hub.docker.com/r/kylemanna/aosp/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/kylemanna/aosp.svg)](https://hub.docker.com/r/kylemanna/aosp/)
-[![ImageLayers](https://images.microbadger.com/badges/image/kylemanna/aosp.svg)](https://microbadger.com/#/images/kylemanna/aosp)
+[![Docker Stars](https://img.shields.io/docker/stars/iamsalvamartini/aosp.svg)](https://hub.docker.com/r/iamsalvamartini/aosp/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/iamsalvamartini/aosp.svg)](https://hub.docker.com/r/iamsalvamartini/aosp/)
+[![ImageLayers](https://images.microbadger.com/badges/image/iamsalvamartini/aosp.svg)](https://microbadger.com/#/images/iamsalvamartini/aosp)
 
 Minimal build environment for AOSP with handy automation wrapper scripts.
 
@@ -46,8 +46,8 @@ For the terribly impatient.
 
             mkdir nougat ; cd nougat
             export AOSP_VOL=$PWD
-            curl -O https://raw.githubusercontent.com/kylemanna/docker-aosp/master/tests/build-nougat.sh
-            bash ./build-nougat.sh
+            curl -O https://raw.githubusercontent.com/iamsalvamartini/docker-aosp/master/tests/build-evolution.sh
+            bash ./build-evolution.sh
 
     This takes about 2 hours to download and build on i5-2500k with 100Mb/s network connection.
 
@@ -82,7 +82,7 @@ version: "2"
 
 services:
   aosp:
-    image: kylemanna/aosp:latest
+    image: iamsalvamartini/aosp:latest
     volumes:
       - /tmp/ccache:/ccache
       - ~/aosp:/aosp
@@ -101,10 +101,6 @@ build to the local macOS file system via VirtualBox or similar.
 
 Tested
 ------
-
-* Android Kitkat `android-4.4.4_r2.0.1`
-* Android Lollipop `android-5.0.2_r1`
-* Android Marshmallow `android-6.0.1_r80`
-* Android Nougat `android-7.0.0_r14`
+`
 
 [Docker Compose]: https://docs.docker.com/compose
